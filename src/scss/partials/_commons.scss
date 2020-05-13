@@ -2,10 +2,11 @@
 * Commons
 ******************/
 // flex
-@mixin flex($align:flex-start, $just-content:flex-start) {
+@mixin flex($align:flex-start, $just-content:flex-start, $flex-direction:row) {
     display: flex;
     align-items: $align;
     justify-content: $just-content;
+    flex-direction: $flex-direction;
 }
 
 // list style
