@@ -1,0 +1,31 @@
+/*****************
+* Commons
+******************/
+// Mixins
+@mixin flex($align:flex-start, $just-content:flex-start) {
+    display: flex;
+    align-items: $align;
+    justify-content: $just-content;
+}
+
+@mixin list_style {
+    margin: 0;
+    padding: 0;
+    list-style: none;  
+}
+
+// General Styles
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $general_font;
+}
+
+.general_container {
+    width: 1170px;
+    margin: 0 auto;
+}

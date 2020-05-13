@@ -1,0 +1,40 @@
+/*********************
+* Variables
+**********************/
+
+/*****************
+* Commons
+******************/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.general_container {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.header_navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+.header_navbar .navbar_menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+

@@ -1,0 +1,9 @@
+.header_navbar {
+    @include flex(center, space-between);
+    padding: 20px 0;
+
+    .navbar_menu {
+        @include list_style;
+        @include flex;
+    }
+} 
