@@ -1,9 +1,44 @@
+/*********************
+* Header Styles
+**********************/
 .header_navbar {
     @include flex(center, space-between);
     padding: 20px 0;
+    border-bottom: 1px solid $border_navbar;
 
     .navbar_menu {
         @include list_style;
-        @include flex;
+        @include flex(center);
+
+        li {
+            margin-left: 40px;
+            color: $font_color;
+            font-weight: $font_weight600;
+            cursor: $cursor_pointer;
+            
+            &:last-child a {
+                @include flex(center);
+                @include style_link;
+                padding: 5px 10px;
+                color: $btn_textcolor;
+                font-weight: $font_weight600;
+                border: 1px solid $border_btn;
+                border-radius: 7px;
+
+
+                &:hover {
+                    background: $hover_button;
+                    color: $color_white;
+                }
+
+                img {
+                    margin-right: 5px;
+                    width: 18px;
+                }
+            }
+        }
+
+        
+        
     }
 } 
