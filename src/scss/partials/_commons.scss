@@ -1,21 +1,33 @@
 /*****************
 * Commons
 ******************/
-// Mixins
+// flex
 @mixin flex($align:flex-start, $just-content:flex-start) {
     display: flex;
     align-items: $align;
     justify-content: $just-content;
 }
 
+// list style
 @mixin list_style {
     margin: 0;
     padding: 0;
     list-style: none;  
 }
 
+// link style
 @mixin style_link {
     text-decoration: none;
+}
+
+@mixin btn_style {
+    padding: 8px 20px;
+    background: $btn_bg_color;
+    color: $color_white;
+    font-size: $font_size_general;
+    border-radius: 7px;
+    border: none;
+    cursor: $cursor_pointer;
 }
 
 // General Styles

@@ -1,0 +1,75 @@
+/*********************
+* Jumbotron
+**********************/
+
+.jumbotron_wrapper {
+    margin: 100px 0;
+    // jumbotron
+    .jumbotron {
+        @include flex;
+
+        // sx-col
+        .jumbotron_sxcol {
+            max-width: 50%;
+            padding-right: 20px;
+
+            h1 {
+                font-size: $font_size_title;
+                font-weight: $font_weight600;
+                color: $font_color;
+                margin-bottom: 30px;
+            }
+
+            p {
+                max-width: 85%;
+                margin-bottom: 40px;
+                font-size: $font_size_paragraph;
+                color: $font_color;
+                
+            }
+
+            // jumbotron btn
+            .jumbotron_btn {
+                @include flex(center);
+                margin-bottom: 30px;
+
+                button {
+                    @include flex(center);
+                    @include btn_style;
+                   
+                    img {
+                        margin-right: 5px;
+                        width: 18px;
+                    }
+                }
+
+                span {
+                    margin: 0 15px;
+                    color: $span_color;
+                    font-size: $font_size_span;
+                }
+            }
+
+            a {
+                @include style_link;
+                color: $font_color;
+                font-size: $font_size_general;
+                
+                i {
+                    margin-left: 10px;
+                }
+            }
+        }
+
+        // dx-col
+        .jumbotron_dxcol {
+            width: 50%;
+
+            img {
+                max-width: 100%;
+                padding-left: 20px;
+            }
+        }
+
+    }
+}
