@@ -3,5 +3,82 @@
 **********************/
 
 .services_wrapper {
-    background:  $bg_color_services;
+    background: $bg_color_services;    
+    //top rules
+    .services_box {
+        padding: 80px 0;
+        border-bottom: 1px solid $grey_color;
+
+        // title box
+        .services_title {
+            max-width: 60%;
+            text-align: center;
+            margin-bottom: 70px;
+            h2 {
+                @include font_style($font_size_title2, $font_color_primary, 600, 1.5);
+            }
+        }
+
+        @include flex($align: center, $flex-direction: column); 
+
+        .img_container {
+            @include flex;
+
+            .img_wrapper {
+                @include flex($align: center, $flex-direction: column);
+                width: calc(100%/3);
+
+                &:first-child {
+                    img {
+                        padding-bottom: 20px;
+                    }
+                }
+                img {
+                    max-width: 140px;
+                    max-height: 105px;
+                    margin-bottom: 20px;
+                }
+
+                p {
+                    @include font_style($font_size_paragraph2, $font_color_primary, $lh:1.5);
+                    text-align: center;
+                    width: 65%;
+                }
+            }
+        }  
+        
+        & > img {
+            max-width: 280px;
+            margin-top: 70px;
+        }
+
+        // bottom rules 
+        &:last-child {
+            border-bottom: none;
+            .services_title {
+                &:last-child {
+                    margin-bottom: 0;
+                    h2 {
+                        margin-top: 70px;
+                    }
+                }
+            }
+
+            .img_container {
+                .img_wrapper {
+                    &:nth-child(2) {
+                        p {
+                            width: 80%;
+                        }
+                    }
+                    &:last-child {
+                        img {
+                            max-height: 96px;
+                        }
+                    }
+                }   
+            } 
+        }
+    }
 }
+

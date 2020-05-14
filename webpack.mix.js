@@ -12,15 +12,18 @@ let mix = require('laravel-mix');
  */
 
 mix.js('src/js/main.js', 'dist/script')
-.sass('src/scss/main.scss', 'dist/style')
-.browserSync({
-    proxy: false,
-    watch: true,
-    server: {
-        baseDir: './',
-        index: 'index.html'
-    }
-});
+    .sass('src/scss/main.scss', 'dist/style')
+    .browserSync({
+        proxy: false,
+        watch: true,
+        server: {
+            baseDir: './',
+            index: 'index.html'
+        }
+    })
+    .options({
+        processCssUrls: false
+    });
 
 // Full API
 // mix.js(src, output);
