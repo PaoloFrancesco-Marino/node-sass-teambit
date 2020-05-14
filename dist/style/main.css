@@ -239,9 +239,9 @@ body {
   align-items: flex-start;
   justify-content: flex-start;
   flex-direction: row;
-  padding: 80px 0 20px 0;
+  padding: 80px 0 40px 0;
 }
-.products_row .products_sx {
+.products_row .products_img {
   display: flex;
   align-items: flex-start;
   justify-content: flex-end;
@@ -249,21 +249,21 @@ body {
   width: 50%;
   padding-right: 10px;
 }
-.products_row .products_sx img {
+.products_row .products_img img {
   max-width: 768px;
 }
-.products_row .products_dx {
+.products_row .products_description {
   width: 50%;
   padding-left: 10px;
 }
-.products_row .products_dx .product_content {
+.products_row .products_description .product_content {
   display: flex;
   align-items: center;
   justify-content: flex-start;
   flex-direction: column;
   width: 50%;
 }
-.products_row .products_dx .product_content h3 {
+.products_row .products_description .product_content h3 {
   font-family: "Open Sans", sans-serif;
   font-size: 28px;
   color: #58402c;
@@ -271,14 +271,14 @@ body {
   line-height: 1.5;
   margin-bottom: 15px;
 }
-.products_row .products_dx .product_content p {
+.products_row .products_description .product_content p {
   font-family: "Open Sans", sans-serif;
   font-size: 22px;
   color: #58402c;
   line-height: 1.5;
   margin-bottom: 40px;
 }
-.products_row .products_dx .product_content p a {
+.products_row .products_description .product_content p a {
   text-decoration: none;
   font-family: "Open Sans", sans-serif;
   font-size: 22px;
@@ -286,9 +286,136 @@ body {
   margin-top: 30px;
   display: block;
 }
-.products_row .products_dx .product_content p a i {
+.products_row .products_description .product_content p a i {
   margin-left: 10px;
 }
-.products_row .products_dx .product_content img {
+.products_row .products_description .product_content img {
   max-width: 270px;
+}
+.products_row:nth-child(even) .products_img {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+.products_row:nth-child(even) .products_description {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  flex-direction: row;
+}
+
+/*********************
+* Teambit Start
+**********************/
+.teambit_wrapper {
+  background: #ffe7d2;
+}
+.teambit_wrapper .teambit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 80px 0 50px;
+}
+.teambit_wrapper .teambit h2 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 35px;
+  color: #58402c;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+.teambit_wrapper .teambit h2:nth-child(2) {
+  margin-bottom: 50px;
+}
+.teambit_wrapper .teambit .teambit_box {
+  position: relative;
+  width: 628px;
+  margin-bottom: 35px;
+  padding: 35px 20px 35px 40px;
+  background-color: #fff;
+  border-radius: 7px;
+  border: 1px solid #bdb5af;
+}
+.teambit_wrapper .teambit .teambit_box p {
+  font-family: "Open Sans", sans-serif;
+  color: #58402c;
+  line-height: 1.5;
+  margin-bottom: 25px;
+}
+.teambit_wrapper .teambit .teambit_box > img {
+  position: absolute;
+  width: 37px;
+  top: 0;
+  left: 0;
+  transform: translateY(-57%);
+}
+.teambit_wrapper .teambit .teambit_box .founders {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+.teambit_wrapper .teambit .teambit_box .founders img {
+  width: 38px;
+  margin-right: 12px;
+}
+.teambit_wrapper .teambit .teambit_box .founders .founders_description {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+.teambit_wrapper .teambit .teambit_box .founders .founders_description span:first-child {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  color: #30488f;
+}
+.teambit_wrapper .teambit .teambit_box .founders .founders_description span:last-child {
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  color: #58402c;
+}
+.teambit_wrapper .teambit .teambit_btn {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  margin-bottom: 35px;
+}
+.teambit_wrapper .teambit .teambit_btn button {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  color: #fff;
+  padding: 8px 20px;
+  background: #30488f;
+  border-radius: 7px;
+  border: none;
+  cursor: pointer;
+}
+.teambit_wrapper .teambit .teambit_btn button:hover {
+  background-color: #233569;
+}
+.teambit_wrapper .teambit .teambit_btn button img {
+  margin-right: 5px;
+  width: 18px;
+}
+.teambit_wrapper .teambit .teambit_btn span {
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  color: #bdb5af;
+  margin: 0 15px;
+}
+.teambit_wrapper .teambit a {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  color: #58402c;
+  text-decoration: none;
+}
+.teambit_wrapper .teambit a i {
+  margin-left: 10px;
 }

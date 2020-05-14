@@ -3,9 +3,9 @@
 **********************/
 .products_row {
     @include flex;
-    padding: 80px 0 20px 0;
+    padding: 80px 0 40px 0;
     
-    .products_sx {
+    .products_img {
         @include flex($just-content: flex-end);
         width: 50%;
         padding-right: 10px;
@@ -15,7 +15,7 @@
         }
     }
 
-    .products_dx {
+    .products_description {
         width: 50%;
         padding-left: 10px;
         .product_content {
@@ -41,6 +41,17 @@
             img {
                 max-width: 270px
             }
+        }
+    }
+
+    &:nth-child(even) {
+
+        .products_img {
+            @include flex($just-content: flex-start);
+        }
+
+        .products_description {
+            @include flex($just-content: flex-end);
         }
     }
 }

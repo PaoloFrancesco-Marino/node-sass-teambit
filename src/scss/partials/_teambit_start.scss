@@ -1,0 +1,96 @@
+/*********************
+* Teambit Start
+**********************/
+
+.teambit_wrapper {
+    background: $bg_color_services; 
+
+    .teambit {
+        @include flex(center, center, column);
+        padding: 80px 0 50px;
+        h2 {
+            @include font_style(35px, $font_color_primary, 600);
+            margin-bottom: 15px;
+
+            &:nth-child(2) {
+                margin-bottom: 50px;
+            }
+        }
+        .teambit_box {
+            position: relative;
+            width: 628px;
+            margin-bottom: 35px;
+            padding: 35px 20px 35px 40px;
+            background-color: $color_white;
+            border-radius: 7px;
+            border: 1px solid $grey_color;
+
+            p {
+                @include font_style($color: $font_color_primary, $lh: 1.5);
+                margin-bottom: 25px;
+            }
+
+            & > img {
+                position: absolute;
+                width: 37px;
+                top: 0;
+                left: 0;
+                transform: translateY(-57%);
+            }
+
+            .founders {
+                @include flex(center);
+                img {
+                    width: 38px;
+                    margin-right: 12px;
+                }
+
+                .founders_description {
+                    @include flex($flex_direction: column);
+                    span {
+                        &:first-child {
+                            @include font_style($font_size_general, $primary_color_blue);
+                        }
+
+                        &:last-child {
+                            @include font_style(12px, $font_color_primary);
+                        }
+                    }
+                }
+            }
+        }
+
+        .teambit_btn {
+            @include flex(center);
+            margin-bottom: 35px;
+            button {
+                @include flex(center);
+                @include btn_style;
+
+                &:hover {
+                    background-color: $btn_hover;
+                }
+               
+                img {
+                    margin-right: 5px;
+                    width: 18px;
+                }
+            }
+
+            span {
+                @include font_style(13px, $grey_color);
+                margin: 0 15px; 
+            }
+        }
+
+        a {
+            @include font_style($font_size_general, $font_color_primary);
+            @include style_link;
+            
+            i {
+                margin-left: 10px;
+            }
+        }
+    }
+
+}
