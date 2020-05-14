@@ -1,0 +1,70 @@
+/*********************
+* Footer
+**********************/
+
+.footer_wrapper {
+    @include flex;
+    padding: 100px 0;
+
+    // footer sx
+    .footer_sx {
+        @include flex;
+        width: 35%;
+        img {
+            width: 50px;
+            margin-right: 25px;
+        }
+
+        p {
+            @include font_style($font_size_paragraph2, $font_color_primary, 600);
+            width: 70%;
+            a {
+                @include style_link;
+            }
+        }
+    }
+
+    .footer_link {
+        @include flex;
+        width: 65%;
+        ul {
+            @include list_style;
+            width: calc(100% / 5);
+            margin-left: 14px;
+            li {
+                margin-bottom: 15px;
+                &:first-child {
+                    margin-bottom: 22px;
+                }
+                h3 {
+                    @include font_style($font_size_paragraph2, $font_color_primary, 600);
+                }
+                a {
+                    @include font_style($font_size_general, $font_color_primary);
+                    @include style_link; 
+
+                    &:hover {
+                        @include font_style($color: $primary_color_blue);
+                    }
+                }
+            }
+
+            &:last-child {
+                li {
+                    margin-bottom: 0;
+                    &:first-child {
+                        margin-bottom: 15px;
+                    }
+
+                    a {
+                        @include font_style($lh: 2.4);
+    
+                        i {
+                            margin-left: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
