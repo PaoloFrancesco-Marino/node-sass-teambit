@@ -1,6 +1,26 @@
 /*****************
 * Commons
 ******************/
+
+// General Styles
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $general_font;
+}
+
+.general_container {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+/**********
+* Mixin
+***********/
 // flex
 @mixin flex($align:flex-start, $just-content:flex-start, $flex-direction:row) {
     display: flex;
@@ -21,28 +41,37 @@
     text-decoration: none;
 }
 
+// fonts
+@mixin font_style ($size: false, $color: false, $weight: false, $lh: false, $ls: false) {
+    font-family: $general_font;
+	// font-size
+	@if $size {
+		font-size: $size;
+	}
+	// color
+	@if $color {
+		color: $color;
+	}
+	// font-weight
+	@if $weight {
+		font-weight: $weight;
+    }
+    // line-height
+	@if $lh {
+		line-height: $lh;
+	}
+	// letter-spacing
+	@if $ls {
+		letter-spacing: $ls;
+	}
+}
+
+// btn_styles
 @mixin btn_style {
+    @include font_style($font_size_general, $color_white);
     padding: 8px 20px;
-    background: $btn_bg_color;
-    color: $color_white;
-    font-size: $font_size_general;
+    background: $primary_color_blue;
     border-radius: 7px;
     border: none;
     cursor: $cursor_pointer;
-}
-
-// General Styles
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: $general_font;
-}
-
-.general_container {
-    width: 1170px;
-    margin: 0 auto;
 }

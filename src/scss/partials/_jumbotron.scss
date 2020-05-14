@@ -14,18 +14,14 @@
             padding-right: 20px;
 
             h1 {
-                font-size: $font_size_title;
-                font-weight: $font_weight600;
-                color: $font_color;
+                @include font_style($font_size_title, $font_color_primary,600);
                 margin-bottom: 30px;
             }
 
             p {
+                @include font_style($font_size_paragraph, $font_color_primary);
                 max-width: 85%;
-                margin-bottom: 40px;
-                font-size: $font_size_paragraph;
-                color: $font_color;
-                
+                margin-bottom: 40px;  
             }
 
             // jumbotron btn
@@ -36,6 +32,10 @@
                 button {
                     @include flex(center);
                     @include btn_style;
+
+                    &:hover {
+                        background-color: $btn_hover;
+                    }
                    
                     img {
                         margin-right: 5px;
@@ -44,16 +44,14 @@
                 }
 
                 span {
-                    margin: 0 15px;
-                    color: $span_color;
-                    font-size: $font_size_span;
+                    @include font_style(13px, $grey_color);
+                    margin: 0 15px; 
                 }
             }
 
             a {
+                @include font_style($font_size_general, $font_color_primary);
                 @include style_link;
-                color: $font_color;
-                font-size: $font_size_general;
                 
                 i {
                     margin-left: 10px;

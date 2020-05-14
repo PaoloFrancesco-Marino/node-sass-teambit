@@ -4,7 +4,7 @@
 .header_navbar {
     @include flex(center, space-between);
     padding: 20px 0;
-    border-bottom: 1px solid $border_navbar;
+    border-bottom: 1px solid $grey_color;
     // navbar menu
     .navbar_menu {
         @include list_style;
@@ -12,9 +12,7 @@
 
         li {
             margin-left: 40px;
-            color: $font_color;
-            font-size: $font_size_general;
-            font-weight: $font_weight600;
+            @include font_style($font_size_general, $font_color_primary,600);
             cursor: $cursor_pointer;
 
             &:first-child i {
@@ -23,15 +21,14 @@
 
             &:last-child a {
                 @include flex(center);
+                @include font_style($color:$primary_color_blue, $weight:600);
                 @include style_link;
                 padding: 8px 10px;
-                color: $btn_textcolor;
-                font-weight: $font_weight600;
                 border: 1px solid $border_btn;
                 border-radius: 7px;
                 // btn hover
                 &:hover {
-                    background: $hover_button;
+                    background: $primary_color_blue;
                     color: $color_white;
                 }
 

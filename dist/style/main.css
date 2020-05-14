@@ -21,6 +21,10 @@ body {
   margin: 0 auto;
 }
 
+/**********
+* Mixin
+***********/
+
 /*********************
 * Header Styles
 **********************/
@@ -46,8 +50,9 @@ body {
 
 .header_navbar .navbar_menu li {
   margin-left: 40px;
-  color: #58402c;
+  font-family: "Open Sans", sans-serif;
   font-size: 14px;
+  color: #58402c;
   font-weight: 600;
   cursor: pointer;
 }
@@ -61,10 +66,11 @@ body {
   align-items: center;
   justify-content: flex-start;
   flex-direction: row;
-  text-decoration: none;
-  padding: 8px 10px;
+  font-family: "Open Sans", sans-serif;
   color: #30488f;
   font-weight: 600;
+  text-decoration: none;
+  padding: 8px 10px;
   border: 1px solid #2e4691;
   border-radius: 7px;
 }
@@ -100,17 +106,19 @@ body {
 }
 
 .jumbotron_wrapper .jumbotron .jumbotron_sxcol h1 {
+  font-family: "Open Sans", sans-serif;
   font-size: 50px;
-  font-weight: 600;
   color: #58402c;
+  font-weight: 600;
   margin-bottom: 30px;
 }
 
 .jumbotron_wrapper .jumbotron .jumbotron_sxcol p {
-  max-width: 85%;
-  margin-bottom: 40px;
+  font-family: "Open Sans", sans-serif;
   font-size: 22px;
   color: #58402c;
+  max-width: 85%;
+  margin-bottom: 40px;
 }
 
 .jumbotron_wrapper .jumbotron .jumbotron_sxcol .jumbotron_btn {
@@ -126,13 +134,18 @@ body {
   align-items: center;
   justify-content: flex-start;
   flex-direction: row;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  color: #fff;
   padding: 8px 20px;
   background: #30488f;
-  color: #fff;
-  font-size: 14px;
   border-radius: 7px;
   border: none;
   cursor: pointer;
+}
+
+.jumbotron_wrapper .jumbotron .jumbotron_sxcol .jumbotron_btn button:hover {
+  background-color: #233569;
 }
 
 .jumbotron_wrapper .jumbotron .jumbotron_sxcol .jumbotron_btn button img {
@@ -141,15 +154,17 @@ body {
 }
 
 .jumbotron_wrapper .jumbotron .jumbotron_sxcol .jumbotron_btn span {
-  margin: 0 15px;
-  color: #bdb5af;
+  font-family: "Open Sans", sans-serif;
   font-size: 13px;
+  color: #bdb5af;
+  margin: 0 15px;
 }
 
 .jumbotron_wrapper .jumbotron .jumbotron_sxcol a {
-  text-decoration: none;
-  color: #58402c;
+  font-family: "Open Sans", sans-serif;
   font-size: 14px;
+  color: #58402c;
+  text-decoration: none;
 }
 
 .jumbotron_wrapper .jumbotron .jumbotron_sxcol a i {
