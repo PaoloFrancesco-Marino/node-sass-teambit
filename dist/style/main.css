@@ -1,11 +1,9 @@
 /*********************
 * Variables
 **********************/
-
 /*****************
 * Commons
 ******************/
-
 * {
   margin: 0;
   padding: 0;
@@ -24,11 +22,9 @@ body {
 /**********
 * Mixin
 ***********/
-
 /*********************
 * Header Styles
 **********************/
-
 .header_navbar {
   display: flex;
   align-items: center;
@@ -37,7 +33,6 @@ body {
   padding: 20px 0;
   border-bottom: 1px solid #bdb5af;
 }
-
 .header_navbar .navbar_menu {
   margin: 0;
   padding: 0;
@@ -47,7 +42,6 @@ body {
   justify-content: flex-start;
   flex-direction: row;
 }
-
 .header_navbar .navbar_menu li {
   margin-left: 40px;
   font-family: "Open Sans", sans-serif;
@@ -56,11 +50,9 @@ body {
   font-weight: 600;
   cursor: pointer;
 }
-
 .header_navbar .navbar_menu li:first-child i {
   margin-left: 10px;
 }
-
 .header_navbar .navbar_menu li:last-child a {
   display: flex;
   align-items: center;
@@ -74,12 +66,10 @@ body {
   border: 1px solid #2e4691;
   border-radius: 7px;
 }
-
 .header_navbar .navbar_menu li:last-child a:hover {
   background: #30488f;
   color: #fff;
 }
-
 .header_navbar .navbar_menu li:last-child a img {
   margin-right: 5px;
   width: 18px;
@@ -88,23 +78,19 @@ body {
 /*********************
 * Jumbotron
 **********************/
-
 .jumbotron_wrapper {
   margin: 100px 0;
 }
-
 .jumbotron_wrapper .jumbotron {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
   flex-direction: row;
 }
-
 .jumbotron_wrapper .jumbotron .jumbotron_sxcol {
   max-width: 50%;
   padding-right: 20px;
 }
-
 .jumbotron_wrapper .jumbotron .jumbotron_sxcol h1 {
   font-family: "Open Sans", sans-serif;
   font-size: 50px;
@@ -112,7 +98,6 @@ body {
   font-weight: 600;
   margin-bottom: 30px;
 }
-
 .jumbotron_wrapper .jumbotron .jumbotron_sxcol p {
   font-family: "Open Sans", sans-serif;
   font-size: 22px;
@@ -120,7 +105,6 @@ body {
   max-width: 85%;
   margin-bottom: 40px;
 }
-
 .jumbotron_wrapper .jumbotron .jumbotron_sxcol .jumbotron_btn {
   display: flex;
   align-items: center;
@@ -128,7 +112,6 @@ body {
   flex-direction: row;
   margin-bottom: 30px;
 }
-
 .jumbotron_wrapper .jumbotron .jumbotron_sxcol .jumbotron_btn button {
   display: flex;
   align-items: center;
@@ -143,38 +126,31 @@ body {
   border: none;
   cursor: pointer;
 }
-
 .jumbotron_wrapper .jumbotron .jumbotron_sxcol .jumbotron_btn button:hover {
   background-color: #233569;
 }
-
 .jumbotron_wrapper .jumbotron .jumbotron_sxcol .jumbotron_btn button img {
   margin-right: 5px;
   width: 18px;
 }
-
 .jumbotron_wrapper .jumbotron .jumbotron_sxcol .jumbotron_btn span {
   font-family: "Open Sans", sans-serif;
   font-size: 13px;
   color: #bdb5af;
   margin: 0 15px;
 }
-
 .jumbotron_wrapper .jumbotron .jumbotron_sxcol a {
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
   color: #58402c;
   text-decoration: none;
 }
-
 .jumbotron_wrapper .jumbotron .jumbotron_sxcol a i {
   margin-left: 10px;
 }
-
 .jumbotron_wrapper .jumbotron .jumbotron_dxcol {
   width: 50%;
 }
-
 .jumbotron_wrapper .jumbotron .jumbotron_dxcol img {
   max-width: 100%;
   padding-left: 20px;
@@ -183,11 +159,9 @@ body {
 /*********************
 * Services
 **********************/
-
 .services_wrapper {
   background: #ffe7d2;
 }
-
 .services_wrapper .services_box {
   padding: 80px 0;
   border-bottom: 1px solid #bdb5af;
@@ -196,28 +170,24 @@ body {
   justify-content: flex-start;
   flex-direction: column;
 }
-
 .services_wrapper .services_box .services_title {
-  max-width: 60%;
+  max-width: 65%;
   text-align: center;
   margin-bottom: 70px;
 }
-
 .services_wrapper .services_box .services_title h2 {
   font-family: "Open Sans", sans-serif;
-  font-size: 26px;
+  font-size: 28px;
   color: #58402c;
   font-weight: 600;
   line-height: 1.5;
 }
-
 .services_wrapper .services_box .img_container {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
   flex-direction: row;
 }
-
 .services_wrapper .services_box .img_container .img_wrapper {
   display: flex;
   align-items: center;
@@ -225,17 +195,14 @@ body {
   flex-direction: column;
   width: calc(100%/3);
 }
-
 .services_wrapper .services_box .img_container .img_wrapper:first-child img {
   padding-bottom: 20px;
 }
-
 .services_wrapper .services_box .img_container .img_wrapper img {
   max-width: 140px;
   max-height: 105px;
   margin-bottom: 20px;
 }
-
 .services_wrapper .services_box .img_container .img_wrapper p {
   font-family: "Open Sans", sans-serif;
   font-size: 18px;
@@ -244,30 +211,84 @@ body {
   text-align: center;
   width: 65%;
 }
-
 .services_wrapper .services_box > img {
   max-width: 280px;
   margin-top: 70px;
 }
-
 .services_wrapper .services_box:last-child {
   border-bottom: none;
 }
-
 .services_wrapper .services_box:last-child .services_title:last-child {
   margin-bottom: 0;
 }
-
 .services_wrapper .services_box:last-child .services_title:last-child h2 {
   margin-top: 70px;
 }
-
 .services_wrapper .services_box:last-child .img_container .img_wrapper:nth-child(2) p {
   width: 80%;
 }
-
 .services_wrapper .services_box:last-child .img_container .img_wrapper:last-child img {
   max-height: 96px;
 }
 
-
+/*********************
+* Products
+**********************/
+.products_row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+  padding: 80px 0 20px 0;
+}
+.products_row .products_sx {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  flex-direction: row;
+  width: 50%;
+  padding-right: 10px;
+}
+.products_row .products_sx img {
+  max-width: 768px;
+}
+.products_row .products_dx {
+  width: 50%;
+  padding-left: 10px;
+}
+.products_row .products_dx .product_content {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 50%;
+}
+.products_row .products_dx .product_content h3 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 28px;
+  color: #58402c;
+  font-weight: 600;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+.products_row .products_dx .product_content p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 22px;
+  color: #58402c;
+  line-height: 1.5;
+  margin-bottom: 40px;
+}
+.products_row .products_dx .product_content p a {
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+  font-size: 22px;
+  color: #30488f;
+  margin-top: 30px;
+  display: block;
+}
+.products_row .products_dx .product_content p a i {
+  margin-left: 10px;
+}
+.products_row .products_dx .product_content img {
+  max-width: 270px;
+}
