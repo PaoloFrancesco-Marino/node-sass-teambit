@@ -533,3 +533,25 @@ body {
 .footer_wrapper .footer_link ul:last-child li a i {
   margin-left: 10px;
 }
+
+/*********************
+* Chat Styles
+**********************/
+.chat_fixed {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 20px;
+  right: 20px;
+  border-radius: 50%;
+  background: #2e4691;
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.2);
+}
+.chat_fixed i {
+  font-size: 25px;
+  color: #fff;
+}
